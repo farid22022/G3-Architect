@@ -2,7 +2,12 @@
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700&display=swap');
   /* Shared Styles */
   .btn-primary{
-
+    border-radius: 8px;
+    color: #fff;
+    background-color: #FF900E;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
   }
   *{
     font-family: 'Lato',sans-serif;
@@ -50,4 +55,28 @@
   }
   .banner-description {
     color: #727272;
+  }
+  .banner img {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+
+  /* responsive style */
+  @media screen and (max-width:576px){
+    header {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column-reverse;
+    }
+  }
+  /* Tablet or medium device */
+  @media screen and (min-width:576px) and (max-width:960px) {
+    header {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column-reverse;
+    }
   }
